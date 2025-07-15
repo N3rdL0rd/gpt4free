@@ -1506,6 +1506,11 @@ model_map = {
       "openrouter:anthropic/claude-3-sonnet"
     ]
   },
+  "claude-sonnet-4": {
+    "PuterJS": [
+      "claude-sonnet-4"
+    ]
+  },
   "tulu-2-dpo-70b": {
     "HarProvider": "tulu-2-dpo-70b",
     "LegacyLMArena": "tulu-2-dpo-70b"
