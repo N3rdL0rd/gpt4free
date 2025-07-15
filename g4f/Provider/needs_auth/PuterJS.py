@@ -26,7 +26,7 @@ class PuterJS(AsyncGeneratorProvider, ProviderModelMixin):
     default_model = 'gpt-4o'
     default_vision_model = default_model
     openai_models = [default_vision_model,"gpt-4o-mini", "o1", "o1-mini", "o1-pro", "o3", "o3-mini", "o4-mini", "gpt-4.1", "gpt-4.1-mini", "gpt-4.1-nano", "gpt-4.5-preview"]
-    claude_models = ["claude-3-7-sonnet-20250219", "claude-3-7-sonnet-latest", "claude-3-5-sonnet-20241022", "claude-3-5-sonnet-latest", "claude-3-5-sonnet-20240620", "claude-3-haiku-20240307"]
+    claude_models = ["claude-3-7-sonnet-20250219", "claude-3-7-sonnet-latest", "claude-3-5-sonnet-20241022", "claude-3-5-sonnet-latest", "claude-3-5-sonnet-20240620", "claude-3-haiku-20240307", "claude-sonnet-4"]
     mistral_models = ["ministral-3b-2410","ministral-3b-latest","ministral-8b-2410","ministral-8b-latest","open-mistral-7b","mistral-tiny","mistral-tiny-2312","open-mixtral-8x7b","mistral-small","mistral-small-2312","open-mixtral-8x22b","open-mixtral-8x22b-2404","mistral-large-2411","mistral-large-latest","pixtral-large-2411","pixtral-large-latest","mistral-large-pixtral-2411","codestral-2501","codestral-latest","codestral-2412","codestral-2411-rc5","pixtral-12b-2409","pixtral-12b","pixtral-12b-latest","mistral-small-2503","mistral-small-latest"]
     model_aliases = {              
         ### mistral_models ###
@@ -139,6 +139,7 @@ class PuterJS(AsyncGeneratorProvider, ProviderModelMixin):
         "mai-ds-r1": "openrouter:microsoft/mai-ds-r1:free",     
 
         # anthropic
+        "claude-sonnet-4": ["claude-4-sonnet", "claude-sonnet-4"],
         "claude-3.7-sonnet": ["claude-3-7-sonnet-20250219", "claude-3-7-sonnet-latest", "openrouter:anthropic/claude-3.7-sonnet", "openrouter:anthropic/claude-3.7-sonnet:beta",],
         "claude-3.7-sonnet-thinking": "openrouter:anthropic/claude-3.7-sonnet:thinking",
         "claude-3.5-haiku": ["openrouter:anthropic/claude-3.5-haiku:beta", "openrouter:anthropic/claude-3.5-haiku", "openrouter:anthropic/claude-3.5-haiku-20241022:beta", "openrouter:anthropic/claude-3.5-haiku-20241022"],
